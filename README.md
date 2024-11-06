@@ -28,8 +28,8 @@ Before you begin, ensure you have the following:
    First, clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/nym-node-deployment.git
-   cd nym-node-deployment
+   git clone https://github.com/spectreintern/nym-node-ansible.git
+   cd nym-node-ansible
    ```
 
 2. **Update Inventory**
