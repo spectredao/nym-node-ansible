@@ -1,0 +1,4 @@
+---
+nym_version: "2024.11-wedel"
+binary_url: "https://github.com/nymtech/nym/releases/download/nym-binaries-v{{ nym_version }}/nym-node"
+tunnel_manager_url: "https://gist.githubusercontent.com/pwnfoo/fabd2a404fe149a5995c68103101c2cd/raw/ae4fe197c5337b1d459a5a5ac37c93fdb8388ac1/network_tunnel_manager.sh"

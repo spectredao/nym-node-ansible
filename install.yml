@@ -1,0 +1,9 @@
+---
+- name: "Install Nym node"
+  hosts: nymnodes
+  become: true
+  roles:
+    - common
+    - nym
+    - nginx
+    - postinstall
