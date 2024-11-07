@@ -262,7 +262,8 @@ test_tunnel_connectivity() {
     if [[ -z "$ipv4_address" ]]; then
         log "No IPv4 address found on $interface"
     else
-        if ! curl -s -H "Accept: application/json" --interface "$ipv4_address" https://icanhazdadjoke.com/ | jq -e .joke > /dev/null; then
+        echo "Fetching joke via IPv4"
+        if ! curl -s -H "Accept: application/json" --interface "$ipv4_address" https://icanhazdadjoke.com/ | jq -e .joke; then
             log "Failed to fetch joke via IPv4"
         fi
     fi
@@ -271,7 +272,8 @@ test_tunnel_connectivity() {
     if [[ -z "$ipv6_address" ]]; then
         log "No globally routable IPv6 address found on $interface"
     else
-        if ! curl -s -H "Accept: application/json" --interface "$ipv6_address" https://icanhazdadjoke.com/ | jq -e .joke > /dev/null; then
+        echo "Fetching joke via IPv6"
+        if ! curl -s -H "Accept: application/json" --interface "$ipv6_address" https://icanhazdadjoke.com/ | jq -e .joke ; then
             log "Failed to fetch joke via IPv6"
         fi
     fi
