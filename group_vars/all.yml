@@ -1,3 +1,4 @@
 ---
 nym_version: "2024.12.1-aero"
 binary_url: "https://github.com/nymtech/nym/releases/download/nym-binaries-v{{ nym_version }}/nym-node"
+cli_url: "https://github.com/nymtech/nym/releases/download/nym-binaries-v{{ nym_version }}/nym-cli"

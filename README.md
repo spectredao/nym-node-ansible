@@ -4,13 +4,15 @@ This guide will help you set up and run a [Nym node](https://nymtech.net/) on yo
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
+- [Nym Node Deployment](#nym-node-deployment)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [Usage](#usage)
+  - [Troubleshooting](#troubleshooting)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Prerequisites
 
@@ -57,6 +59,7 @@ The configuration for the Nym node can be found in the `group_vars/all.yml` file
 
 - `nym_version`: The version of the Nym binaries to install.
 - `binary_url`: The URL to download the Nym node binary.
+- `cli_url`: The URL to download the Nym cli binary.
 - `tunnel_manager_url`: The URL to download the tunnel manager script.
 
 ## Usage

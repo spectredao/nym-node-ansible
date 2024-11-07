@@ -11,6 +11,12 @@
     dest: "/root/nym-binaries/nym-node"
     mode: "0755"
 
+- name: Download nym-cli binary
+  get_url:
+    url: "{{ cli_url }}"
+    dest: "/root/nym-binaries/nym-cli"
+    mode: "0755"
+
 - name: Copy tunnel manager script
   copy:
     src: files/network_tunnel_manager.sh
