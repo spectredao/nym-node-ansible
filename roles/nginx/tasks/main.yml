@@ -13,9 +13,10 @@
     state: directory
     mode: "0755"
 
-- name: Create node template
-  copy:
-    content: "<div>This is a Nym Node</div>"
+- name: Create landing page template
+  tags: landing
+  template:
+    src: landing.html.j2
     dest: "/var/www/{{ hostname }}/index.html"
 
 - name: Remove default nginx site

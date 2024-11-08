@@ -24,6 +24,7 @@
     mode: "0755"
 
 - name: Template systemd service
+  tags: systemctl
   template:
     src: nym-node.service.j2
     dest: /etc/systemd/system/nym-node.service
@@ -64,6 +65,7 @@
     dest: /root/.nym/nym-nodes/default-nym-node/data/description.toml
 
 - name: Enable and start nym service
+  tags: systemctl
   systemd:
     name: nym-node
     enabled: yes

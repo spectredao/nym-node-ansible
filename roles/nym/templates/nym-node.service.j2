@@ -6,7 +6,7 @@ StartLimitBurst=10
 [Service]
 User=root
 LimitNOFILE=65536
-ExecStart=/root/nym-binaries/nym-node run --mode exit-gateway --accept-operator-terms-and-conditions --wireguard-enabled true
+ExecStart=/root/nym-binaries/nym-node run --mode exit-gateway --accept-operator-terms-and-conditions --wireguard-enabled true --announce-wss-port 9001
 KillSignal=SIGINT
 Restart=on-failure
 RestartSec=30

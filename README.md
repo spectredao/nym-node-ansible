@@ -43,7 +43,12 @@ Before you begin, ensure you have the following:
    node1 ansible_host=YOUR_SERVER_IP ansible_user=root hostname=your.hostname.com location=YourLocation email=your.email@example.com
    ```
 
-3. **Run the Playbook**
+3. **Update Landing Page**
+
+   Update the landing page in `roles/nginx/templates/landing.html.j2` to suite your needs. An example can be found in [Nym docs
+   ](https://nymtech.net/docs/operators/nodes/nym-node/configuration/proxy-configuration#html-file-customization)
+
+4. **Run the Playbook**
 
    Execute the Ansible playbook to install and configure the Nym node:
 
@@ -55,22 +60,21 @@ Before you begin, ensure you have the following:
 
 ## Configuration
 
-The configuration for the Nym node can be found in the `group_vars/all.yml` file. You can modify the following variables:
+
+The configuration for the node version and your DAO name can be found in the `group_vars/all.yml` file. You can modify the following variables:
 
 - `nym_version`: The version of the Nym binaries to install.
+<<<<<<< HEAD
 - `binary_url`: The URL to download the Nym node binary.
 - `cli_url`: The URL to download the Nym cli binary.
 - `tunnel_manager_url`: The URL to download the tunnel manager script.
+=======
+- `dao_name`: The name of the DAO / organization / project running the node.
+>>>>>>> 5c919ca (add announce_wss_port, landing page and enhanced README)
 
 ## Usage
 
 Once the installation is complete, the Nym node will be running as a systemd service. You can manage the service using the following commands:
-
-- **Start the Nym Node:**
-
-  ```bash
-  systemctl start nym-node
-  ```
 
 - **Stop the Nym Node:**
 
