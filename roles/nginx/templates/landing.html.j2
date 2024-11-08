@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title> Spectre DAO Gateway </title>
+    <title> {{ dao_name }} Gateway </title>
 </head>
 <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/glitch">
 <link href="https://fonts.cdnfonts.com/css/vt323" rel="stylesheet">
@@ -529,7 +529,7 @@
 <body>
     <div class="hero-container">
         <div class="environment"></div>
-        <h2 class="hero glitch layers" data-text="Spectre DAO"><span>Spectre DAO</span></h2>
+        <h2 class="hero glitch layers" data-text="{{ dao_name }}"><span>{{ dao_name }}</span></h2>
         <h3 class="glitch layers"> This is a <span style="color:#fb6e4e"> Nym Exit Gateway </span></h3>
     </div>
     <section>
@@ -646,7 +646,7 @@
 
         <p>
             If you have a complaint about the router, you can contact the maintainer(s) at <span
-                style="color: #fb6e4e">email@spectredao.net</span>. Complaints related to specific service abuses will
+                style="color: #fb6e4e">{{ email }}</span>. Complaints related to specific service abuses will
             be submitted to the Nym Operators Community to potentially include them in the Exit Policy, preventing the
             router from allowing such traffic. This can only be done on an IP+destination port basis, and common P2P
             ports are already blocked.
