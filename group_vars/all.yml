@@ -1,5 +1,5 @@
 ---
-nym_version: "2024.12.1-aero"
-binary_url: "https://github.com/nymtech/nym/releases/download/nym-binaries-v{{ nym_version }}/nym-node"
-cli_url: "https://github.com/nymtech/nym/releases/download/nym-binaries-v{{ nym_version }}/nym-cli"
+nym_version: "v2024.12.1-aero"
+binary_url: "https://github.com/nymtech/nym/releases/download/nym-binaries-{{ nym_version }}/nym-node"
+cli_url: "https://github.com/nymtech/nym/releases/download/nym-binaries-{{ nym_version }}/nym-cli"
 dao_name: "Spectre DAO"

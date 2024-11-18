@@ -64,13 +64,7 @@ Before you begin, ensure you have the following:
 The configuration for the node version and your DAO name can be found in the `group_vars/all.yml` file. You can modify the following variables:
 
 - `nym_version`: The version of the Nym binaries to install.
-<<<<<<< HEAD
-- `binary_url`: The URL to download the Nym node binary.
-- `cli_url`: The URL to download the Nym cli binary.
-- `tunnel_manager_url`: The URL to download the tunnel manager script.
-=======
 - `dao_name`: The name of the DAO / organization / project running the node.
->>>>>>> 5c919ca (add announce_wss_port, landing page and enhanced README)
 
 ## Usage
 
