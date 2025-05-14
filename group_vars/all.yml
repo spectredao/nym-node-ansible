@@ -1,5 +1,5 @@
 ---
-nym_version: "v2024.14-crunch-patched"
+nym_version: "v2025.9-appenzeller"
 binary_url: "https://github.com/nymtech/nym/releases/download/nym-binaries-{{ nym_version }}/nym-node"
 cli_url: "https://github.com/nymtech/nym/releases/download/nym-binaries-{{ nym_version }}/nym-cli"
 dao_name: "Spectre DAO"
