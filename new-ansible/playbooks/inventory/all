@@ -1,26 +1,26 @@
 [nym_nodes]
 
 # SWISS
-node1    ansible_host=94.232.246.42      hostname=nym-exit.ch-1.spectredao.net   moniker="SpectreDAO - CH-1"
-node2    ansible_host=94.232.246.49      hostname=nym-exit.ch-2.spectredao.net   moniker="SpectreDAO - CH-2"
-node3    ansible_host=94.232.246.50      hostname=nym-exit.ch-3.spectredao.net   moniker="SpectreDAO - CH-3"
-node4    ansible_host=94.232.246.51      hostname=nym-exit.ch-4.spectredao.net   moniker="SpectreDAO - CH-4"
-node5    ansible_host=94.232.246.52      hostname=nym-exit.ch-5.spectredao.net   moniker="SpectreDAO - CH-5"
-node6    ansible_host=94.232.246.53      hostname=nym-exit.ch-6.spectredao.net   moniker="SpectreDAO - CH-6"
-node7    ansible_host=94.232.246.54      hostname=nym-exit.ch-7.spectredao.net   moniker="SpectreDAO - CH-7"
-node8    ansible_host=94.232.246.55      hostname=nym-exit.ch-8.spectredao.net   moniker="SpectreDAO - CH-8"
-node9    ansible_host=94.232.246.144     hostname=nym-exit.ch-9.spectredao.net   moniker="SpectreDAO - CH-9"
+node1    ansible_host=94.232.246.42      hostname=nym-exit.ch-1.spectredao.net   moniker="SpectreDAO - CH-1"  location=CH
+node2    ansible_host=94.232.246.49      hostname=nym-exit.ch-2.spectredao.net   moniker="SpectreDAO - CH-2"  location=CH
+node3    ansible_host=94.232.246.50      hostname=nym-exit.ch-3.spectredao.net   moniker="SpectreDAO - CH-3"  location=CH
+node4    ansible_host=94.232.246.51      hostname=nym-exit.ch-4.spectredao.net   moniker="SpectreDAO - CH-4"  location=CH
+node5    ansible_host=94.232.246.52      hostname=nym-exit.ch-5.spectredao.net   moniker="SpectreDAO - CH-5"  location=CH
+node6    ansible_host=94.232.246.53      hostname=nym-exit.ch-6.spectredao.net   moniker="SpectreDAO - CH-6"  location=CH
+node7    ansible_host=94.232.246.54      hostname=nym-exit.ch-7.spectredao.net   moniker="SpectreDAO - CH-7"  location=CH
+node8    ansible_host=94.232.246.55      hostname=nym-exit.ch-8.spectredao.net   moniker="SpectreDAO - CH-8"  location=CH
+node9    ansible_host=94.232.246.144     hostname=nym-exit.ch-9.spectredao.net   moniker="SpectreDAO - CH-9"  location=CH
 
 # FRANCE
-node10   ansible_host=185.235.240.16     hostname=nym-exit.fr-1.spectredao.net   moniker="SpectreDAO - FR-1"
-node11   ansible_host=185.235.240.20     hostname=nym-exit.fr-2.spectredao.net   moniker="SpectreDAO - FR-2"
-node12   ansible_host=185.235.240.66     hostname=nym-exit.fr-3.spectredao.net   moniker="SpectreDAO - FR-3"
-node13   ansible_host=185.235.240.115    hostname=nym-exit.fr-4.spectredao.net   moniker="SpectreDAO - FR-4"
-node14   ansible_host=185.235.240.101    hostname=nym-exit.fr-5.spectredao.net   moniker="SpectreDAO - FR-5"
+node10   ansible_host=185.235.240.16     hostname=nym-exit.fr-1.spectredao.net   moniker="SpectreDAO - FR-1"  location=FR
+node11   ansible_host=185.235.240.20     hostname=nym-exit.fr-2.spectredao.net   moniker="SpectreDAO - FR-2"  location=FR
+node12   ansible_host=185.235.240.66     hostname=nym-exit.fr-3.spectredao.net   moniker="SpectreDAO - FR-3"  location=FR
+node13   ansible_host=185.235.240.115    hostname=nym-exit.fr-4.spectredao.net   moniker="SpectreDAO - FR-4"  location=FR
+node14   ansible_host=185.235.240.101    hostname=nym-exit.fr-5.spectredao.net   moniker="SpectreDAO - FR-5"  location=FR
 
 # FLOKI: IS & FI
-node15   ansible_host=185.146.234.51     hostname=nym-exit.is-1.spectredao.net   moniker="SpectreDAO - IS-1"
-node16   ansible_host=37.228.129.40      hostname=nym-exit.fi-1.spectredao.net   moniker="SpectreDAO - FI-1"
+node15   ansible_host=185.146.234.51     hostname=nym-exit.is-1.spectredao.net   moniker="SpectreDAO - IS-1"  location=IS
+node16   ansible_host=37.228.129.40      hostname=nym-exit.fi-1.spectredao.net   moniker="SpectreDAO - FI-1"  location=FI
 
 
 
