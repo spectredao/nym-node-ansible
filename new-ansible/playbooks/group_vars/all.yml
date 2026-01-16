@@ -1,5 +1,5 @@
 ---
-ansible_ssh_private_key_file: ~/.ssh/<SSH_KEY>
+ansible_ssh_private_key_file: "{{ lookup('env', 'SPECTRE_SSH_PRIVATE_KEY_FILE') }}"
 
 # nym_version: "v2025.21-mozzarella"
 #
