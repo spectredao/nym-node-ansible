@@ -30,7 +30,7 @@ node16   ansible_host=37.228.129.40      hostname=nym-exit.fi-1.spectredao.net  
 # https://nym.com//docs/operators/orchestration/ansible#configuration
 
 # VARIABLES INFO
-# required vars to set values per node: 
+# required vars to set values per node:
 # `ansible_host`, `hostname`, `location`
 
 # global vars can be set in the group_vars/all.yml, for example:
@@ -46,7 +46,7 @@ node16   ansible_host=37.228.129.40      hostname=nym-exit.fi-1.spectredao.net  
 # without <> brackets
 
 # PRIORITY ORDER
-# anything setup globaly can be overwritten in this file per node  
+# anything setup globaly can be overwritten in this file per node
 # if provided here, it takes priority over the global setting
 
 # EXAMPLES
