@@ -49,6 +49,17 @@
       - "{{ nym_new_version_cmd.stdout_lines | default([]) }}"
   when: not ansible_check_mode and upgrade_ok | default(false)
 
+## sqlite debug step
+#- name: run extra debug command
+#  command:
+#    cmd: >
+#      {{ nym_binary_path }} debug reset-providers-gateway-dbs
+#  register: reset_dbs
+#  changed_when: false
+#  failed_when: false
+#  when:
+#    - not ansible_check_mode
+#    - upgrade_ok | default(false)
 
 # remove backup
 - name: Remove backup after successful upgrade
