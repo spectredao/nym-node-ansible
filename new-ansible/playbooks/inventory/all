@@ -1,29 +1,26 @@
-[nym_nodes]
+[swiss_nodes]
+node1    ansible_host=185.191.239.204    hostname=nym-exit.ch-1.spectredao.net    moniker="SpectreDAO - CH-1"   location=CH
+node2    ansible_host=185.191.239.56     hostname=nym-exit.ch-2.spectredao.net    moniker="SpectreDAO - CH-2"   location=CH
+node3    ansible_host=185.191.239.5      hostname=nym-exit.ch-3.spectredao.net    moniker="SpectreDAO - CH-3"   location=CH
+node4    ansible_host=185.191.239.128    hostname=nym-exit.ch-4.spectredao.net    moniker="SpectreDAO - CH-4"   location=CH
+node5    ansible_host=185.191.239.54     hostname=nym-exit.ch-5.spectredao.net    moniker="SpectreDAO - CH-5"   location=CH
+node6    ansible_host=185.191.239.155    hostname=nym-exit.ch-6.spectredao.net    moniker="SpectreDAO - CH-6"   location=CH
+node7    ansible_host=185.191.239.242    hostname=nym-exit.ch-7.spectredao.net    moniker="SpectreDAO - CH-7"   location=CH
+node8    ansible_host=185.191.239.186    hostname=nym-exit.ch-8.spectredao.net    moniker="SpectreDAO - CH-8"   location=CH
+node9    ansible_host=185.191.239.109    hostname=nym-exit.ch-9.spectredao.net    moniker="SpectreDAO - CH-9"   location=CH
+node10   ansible_host=185.191.239.208    hostname=nym-exit.ch-10.spectredao.net   moniker="SpectreDAO - CH-10"  location=CH
+node11   ansible_host=185.191.239.135    hostname=nym-exit.ch-11.spectredao.net   moniker="SpectreDAO - CH-11"  location=CH
+node12   ansible_host=185.191.239.112    hostname=nym-exit.ch-12.spectredao.net   moniker="SpectreDAO - CH-12"  location=CH
+node13   ansible_host=185.191.239.61     hostname=nym-exit.ch-13.spectredao.net   moniker="SpectreDAO - CH-13"  location=CH
+node14   ansible_host=185.191.239.195    hostname=nym-exit.ch-14.spectredao.net   moniker="SpectreDAO - CH-14"  location=CH
+node15   ansible_host=185.191.239.227    hostname=nym-exit.ch-15.spectredao.net   moniker="SpectreDAO - CH-15"  location=CH
+node16   ansible_host=185.191.239.167    hostname=nym-exit.ch-16.spectredao.net   moniker="SpectreDAO - CH-16"  location=CH
+node17   ansible_host=185.191.239.212    hostname=nym-exit.ch-17.spectredao.net   moniker="SpectreDAO - CH-17"  location=CH
+node18   ansible_host=185.191.239.164    hostname=nym-exit.ch-18.spectredao.net   moniker="SpectreDAO - CH-18"  location=CH
 
-# SWISS
-node1    ansible_host=94.232.246.42      hostname=nym-exit.ch-1.spectredao.net   moniker="SpectreDAO - CH-1"  location=CH
-node2    ansible_host=94.232.246.49      hostname=nym-exit.ch-2.spectredao.net   moniker="SpectreDAO - CH-2"  location=CH
-node3    ansible_host=94.232.246.50      hostname=nym-exit.ch-3.spectredao.net   moniker="SpectreDAO - CH-3"  location=CH
-node4    ansible_host=94.232.246.51      hostname=nym-exit.ch-4.spectredao.net   moniker="SpectreDAO - CH-4"  location=CH
-node5    ansible_host=94.232.246.52      hostname=nym-exit.ch-5.spectredao.net   moniker="SpectreDAO - CH-5"  location=CH
-node6    ansible_host=94.232.246.53      hostname=nym-exit.ch-6.spectredao.net   moniker="SpectreDAO - CH-6"  location=CH
-node7    ansible_host=94.232.246.54      hostname=nym-exit.ch-7.spectredao.net   moniker="SpectreDAO - CH-7"  location=CH
-node8    ansible_host=94.232.246.55      hostname=nym-exit.ch-8.spectredao.net   moniker="SpectreDAO - CH-8"  location=CH
-node9    ansible_host=94.232.246.144     hostname=nym-exit.ch-9.spectredao.net   moniker="SpectreDAO - CH-9"  location=CH
-
-# FRANCE
-node10   ansible_host=185.235.240.16     hostname=nym-exit.fr-1.spectredao.net   moniker="SpectreDAO - FR-1"  location=FR
-node11   ansible_host=185.235.240.20     hostname=nym-exit.fr-2.spectredao.net   moniker="SpectreDAO - FR-2"  location=FR
-node12   ansible_host=185.235.240.66     hostname=nym-exit.fr-3.spectredao.net   moniker="SpectreDAO - FR-3"  location=FR
-node13   ansible_host=185.235.240.115    hostname=nym-exit.fr-4.spectredao.net   moniker="SpectreDAO - FR-4"  location=FR
-node14   ansible_host=185.235.240.101    hostname=nym-exit.fr-5.spectredao.net   moniker="SpectreDAO - FR-5"  location=FR
-
-# FLOKI: IS & FI
-node15   ansible_host=185.146.234.51     hostname=nym-exit.is-1.spectredao.net   moniker="SpectreDAO - IS-1"  location=IS
-node16   ansible_host=37.228.129.40      hostname=nym-exit.fi-1.spectredao.net   moniker="SpectreDAO - FI-1"  location=FI
-
-
-
+[floki_nodes]
+node19   ansible_host=185.146.234.51     hostname=nym-exit.is-1.spectredao.net    moniker="SpectreDAO - IS-1"   location=IS
+node20   ansible_host=37.228.129.40      hostname=nym-exit.fi-1.spectredao.net    moniker="SpectreDAO - FI-1"   location=FI
 
 
 # READ CONFIGURATION GUIDE:
@@ -59,3 +56,42 @@ node16   ansible_host=37.228.129.40      hostname=nym-exit.fi-1.spectredao.net  
 # NOTE:
 # all examples above don't have defined user, email nor description as we use the definition from group_vars/main.yml without an attempt of overwriting it
 # all examples above don't have moniker defined as there is a function in /templates/description.toml.j2 deriving it from the hostname
+
+## READ CONFIGURATION GUIDE:
+## https://nym.com/docs/operators/orchestration/ansible#configuration
+
+##############
+## TEMPLATE ##
+##############
+## uncomment and exchange the <VARIABLES> with your real values for each node without the <> brackets
+
+# node1 ansible_host=<YOUR_SERVER_IP> ansible_user=<USER> hostname=<HOSTNAME> location=<LOCATION> email=<EMAIL> mode=<MODE> wireguard_enabled=<true/false> moniker=<MONIKER> description=<DESCRIPTION>
+
+####################
+## VARIABLES INFO ##
+####################
+
+## --REQUIRED VARS--
+## required per node: 
+## ansible_host, hostname, location
+
+## --OPTIONAL VARS--
+## can be set in the group_vars/all.yml or per node here:
+## email, ansible_user, moniker, description,  mode, wireguard_enabled
+
+## --PRIORITY ORDER--
+## anything setup globaly can be overwritten in this file per node  
+## if provided here, it takes priority over the global setting
+
+## --EXAMPLES--
+## exit + wireguard gateway:
+# node2 ansible_host=11.12.13.14 hostname=nym-exit.ch-1.mydomain.net mode=exit-gateway location=CH wireguard_enabled=true
+
+## entry gateway, no wireguard:
+# node3 ansible_host=12.13.14.15 hostname=nym-entry.ch-2.mydomain.net mode=entry-gateway location=CH wireguard_enabled=false
+
+## mixnode (comment out tunnel+quic roles in deploy.yml for these)
+# mix-de-1   ansible_host=13.14.15.16  hostname=nym-mix.de-1.example.net  location=DE  mode=mixnode  wireguard_enabled=false
+
+## NOTE:
+## all examples above don't have defined user, email nor description as we use global vars from playbooks/group_vars/all.yml

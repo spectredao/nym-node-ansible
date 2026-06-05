@@ -8,8 +8,9 @@ ansible_ssh_private_key_file: "{{ lookup('env', 'SPECTRE_SSH_PRIVATE_KEY_FILE') 
 # latest release from GitHub in /tasks/main.yml then
 # uncomment the line above and set the tag
 
-cli_url: "https://github.com/nymtech/nym/releases/download/nym-binaries-{{ nym_version }}/nym-cli"
-tunnel_manager_url: "https://github.com/nymtech/nym/raw/refs/heads/develop/scripts/nym-node-setup/network-tunnel-manager.sh"
+nym_cli_url: "https://github.com/nymtech/nym/releases/download/{{ nym_version }}/nym-cli"
+# tunnel_manager_url: "https://github.com/nymtech/nym/raw/refs/heads/develop/scripts/nym-node-setup/network-tunnel-manager.sh"
+tunnel_manager_url: "https://raw.githubusercontent.com/nymtech/nym/refs/heads/develop/scripts/nym-node-setup/network-tunnel-manager.sh"
 quic_bridge_deployment_url: "https://raw.githubusercontent.com/nymtech/nym/refs/heads/develop/scripts/nym-node-setup/quic_bridge_deployment.sh"
 
 # NOTE: These values will be used globally unless overwritten per node in inventory/all
@@ -27,7 +28,7 @@ wireguard_enabled: true    # true/false
 
 # NOTE: Possible vars to incule on landing page, etc.
 operator_name: "Spectre DAO"
-
+accept_operator_terms: true                       # controls --accept-operator-terms-and-conditions, read: https://nym.com/docs/operators/nodes/nym-node/setup#terms--conditions
 
 packages:
   - tmux
